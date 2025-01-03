@@ -1,0 +1,45 @@
+??Prog3
+mainprogram 
+data int32_t _aAAAAAA,_aAAAAA2,_bBBBBBB,_xXXXXXX,_cCCCCC1,_cCCCCC2;
+start
+scan _aAAAAAA;
+scan _bBBBBBB;
+for _aAAAAA2<==_aAAAAAA to _bBBBBBB do
+	print _aAAAAA2 * _aAAAAA2;
+
+for _aAAAAA2<==_bBBBBBB to _aAAAAAA do
+	print _aAAAAA2 * _aAAAAA2;
+
+_xXXXXXX<==0;
+_cCCCCC1<==0;
+while _cCCCCC1 << _aAAAAAA 
+start
+	_cCCCCC2<==0;
+	while _cCCCCC2 << _bBBBBBB
+	start	
+		_xXXXXXX<==_xXXXXXX add 1;
+		_cCCCCC2<==_cCCCCC2 add 1;
+	end
+	end while
+_cCCCCC1<==_cCCCCC1 add 1;
+end	
+end while
+print _xXXXXXX;
+
+_xXXXXXX<==0;
+_cCCCCC1<==1;
+repeat
+start
+  _cCCCCC2<==1;
+  repeat
+  start
+    _xXXXXXX<==_xXXXXXX add 1;
+    _cCCCCC2<==_cCCCCC2 add 1;
+	end
+  until not(_cCCCCC2 >> _bBBBBBB)
+  _cCCCCC1<==_cCCCCC1 add 1;
+ end
+until not(_cCCCCC1 >> _aAAAAAA)
+print _xXXXXXX;
+
+end

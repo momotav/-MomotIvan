@@ -1,0 +1,57 @@
+??Prog2
+mainprogram
+data int32_t _aAAAAAA,_bBBBBBB,_cCCCCCC;
+start
+scan _aAAAAAA;
+scan _bBBBBBB;
+scan _cCCCCCC;
+if(_aAAAAAA >> _bBBBBBB)
+start
+	if(_aAAAAAA >> _cCCCCCC)
+	start
+		goto aBIGGER;		
+	end
+	else
+	start
+		print _cCCCCCC;
+		goto oUTOFIF;
+		aBIGGER:		
+		print _aAAAAAA;
+		goto oUTOFIF;
+	end
+end
+if(_bBBBBBB << _cCCCCCC)
+start
+	print _cCCCCCC;
+end
+else
+start
+	print _bBBBBBB;
+end
+oUTOFIF:	
+
+if((_aAAAAAA eg _bBBBBBB ) and ( _aAAAAAA eg _cCCCCCC ) and ( _bBBBBBB eg _cCCCCCC ))
+start
+	print 1;
+end
+else
+start
+	print 0;
+end
+if((_aAAAAAA << 0) or (_bBBBBBB << 0) or (_cCCCCCC << 0))
+start
+	print 1;
+end
+else
+start
+	print 0;
+end
+if(not(_aAAAAAA << (_bBBBBBB add _cCCCCCC)))
+start
+	print (10);
+end
+else
+start
+	print (0);
+end
+end

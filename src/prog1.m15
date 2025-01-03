@@ -1,0 +1,17 @@
+??Prog1
+mainprogram 
+data int32_t _aAAAAAA,_bBBBBBB,_xXXXXXX,_yYYYYYY;
+start
+scan _aAAAAAA;
+scan _bBBBBBB;
+print _aAAAAAA add _bBBBBBB;
+print _aAAAAAA sub _bBBBBBB;
+print _aAAAAAA * _bBBBBBB;
+print _aAAAAAA / _bBBBBBB;
+print _aAAAAAA % _bBBBBBB;
+
+_xXXXXXX<==(_aAAAAAA sub _bBBBBBB) * 10 add (_aAAAAAA add _bBBBBBB) / 10;
+_yYYYYYY<==_xXXXXXX add (_xXXXXXX % 10);
+print _xXXXXXX;
+print _yYYYYYY;
+end
